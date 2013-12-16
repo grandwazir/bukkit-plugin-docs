@@ -1,7 +1,7 @@
 safe: false
 markdown: redcarpet
 pygments: true
-base_path:
+base_path: http://grandwazir.github.io/StarterKit
 plugin:
   name: StarterKit
   package_name: starter-kit
