@@ -1,0 +1,80 @@
+---
+layout: skeleton
+---
+
+{% if page.latest.title != page.title %}
+<div class="alert alert-warning"><strong>This is an old version and is no longer supported.</strong></div>
+{% endif %}
+
+<div class="page-header">
+    <h1>{{ page.title }} {% if page.release_date %} <small>Released on {{ page.release_date | date_to_long_string }}</small>{% endif %}</h1>
+</div>
+
+
+<ul class="list-inline">
+    <li><a href="http://repository.james.richardson.name/releases/name/richardson/james/bukkit/{{ site.plugin.package_name }}/{{ page.title }}/{{ site.plugin.package_name }}-{{ page.title }}-shaded.jar"><button class="btn btn-large btn-primary" type="button">Download</button></a></li>
+    <li><a href="https://github.com/grandwazir/{{ site.plugin.name }}/tree/v{{ page.title }}"><button class="btn btn-large" type="button">Source</button></a></li>
+</ul>
+
+{% capture result %}{% contentblock warnings %}{% endcapture %}
+{% if result != '' %}
+<div class="panel panel-warning">
+    <div class="panel-heading">
+        <h2 class="panel-title">Read before updating</h2>
+    </div>
+    <div class="panel-body">
+        {{ result }}
+    </div>
+</div>
+{% endif %}
+
+{% capture result %}{% contentblock features %}{% endcapture %}
+{% if result != '' %}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2 class="panel-title">New features</h2>
+    </div>
+    <div class="panel-body">
+        {{ result }}
+    </div>
+</div>
+{% endif %}
+
+{% capture result %}{% contentblock improvements %}{% endcapture %}
+{% if result != '' %}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2 class="panel-title">Improvements</h2>
+    </div>
+    <div class="panel-body">
+        {{ result }}
+    </div>
+</div>
+{% endif %}
+
+{% capture result %}{% contentblock bugfixes %}{% endcapture %}
+{% if result != '' %}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2 class="panel-title">Bug fixes</h2>
+    </div>
+    <div class="panel-body">
+        {{ result }}
+    </div>
+</div>
+{% endif %}
+
+
+<ul class="pager">
+    {% if page.previous != nil %}
+    <li class="previous"><a href="{{ page.previous.url }}">&larr; Older</a></li>
+    {% else %}
+    <li class="previous disabled"><a href="#">&larr; Older</a></li>
+    {% endif %}
+    {% if page.next != nil %}
+    <li class="next"><a href="{{ page.next.url }}">Newer &rarr;</a></li>
+    {% else %}
+    <li class="next disabled"><a href="#">Newer &rarr;</a></li>
+    {% endif %}
+</ul>
+

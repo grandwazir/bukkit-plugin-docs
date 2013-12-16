@@ -1,0 +1,38 @@
+---
+layout: page
+group: changelog
+---
+
+{% contentfor intro %}
+<p class="lead">The latest stable version is <strong>{{page.latest.title}}</strong> and available to download. Before installing make sure to check the change log for any relevant changes.</p>
+{% endcontentfor %}
+
+<ul class="list-inline">
+    <li><a href="http://repository.james.richardson.name/releases/name/richardson/james/bukkit/starter-kit/{{ page.latest.title }}/starter-kit-{{ page.latest.title }}-shaded.jar"><button class="btn btn-large btn-primary" type="button">Download</button></a></li>
+    <li><a href="/versions/{{page.latest.title}}.html"><button class="btn btn-large btn-info" type="button">What's new</button></a></li>
+    <li><a href="https://github.com/grandwazir/{{ site.plugin.name }}/tree/v{{ page.latest.title }}"><button class="btn btn-large btn" type="button">Source</button></a></li>
+</ul>
+
+<h2>Getting other versions</h2>
+
+<p><strong>Older versions are available to download but are no longer supported.</strong></p>
+
+{% assign pages_list = site.pages %}
+{% assign group = 'changelog' %}
+<p>
+<ul>
+    {% include page_list.html %}
+</ul>
+</p>
+
+<h2>Building from source</h2>
+
+<p>You can also build {{ site.plugin.name }} from the source if you would prefer to do so. This is useful for those who wish to modify {{ site.plugin.name }} before using it or want to contribute new features.</p>
+
+<p>Note it is no longer necessary to do this to alter messages in the plugin. Instead you should read the documentation on how to localise the plugin instead. This assumes that you have Maven and git installed on your computer.</p>
+
+<pre>
+git clone git://github.com/grandwazir/{{ site.plugin.name }}.git
+cd {{ site.plugin.name }}
+mvn install
+</pre>

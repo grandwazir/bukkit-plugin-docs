@@ -1,0 +1,10 @@
+safe: false
+markdown: redcarpet
+pygments: true
+base_path:
+plugin:
+  name: plugin_name
+  package_name: package_name
+  bukkit_dev: plugin_name
+author:
+  name: James Richardson
