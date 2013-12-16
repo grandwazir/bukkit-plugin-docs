@@ -67,12 +67,12 @@ layout: skeleton
 
 <ul class="pager">
     {% if page.previous != nil %}
-    <li class="previous"><a href="{{ page.previous.url }}">&larr; Older</a></li>
+    <li class="previous"><a href="{{ site.base_path }}{{ page.previous.path }}">&larr; Older</a></li>
     {% else %}
     <li class="previous disabled"><a href="#">&larr; Older</a></li>
     {% endif %}
     {% if page.next != nil %}
-    <li class="next"><a href="{{ page.next.url }}">Newer &rarr;</a></li>
+    <li class="next"><a href="{{ site.base_path }}{{ page.next.path }}">Newer &rarr;</a></li>
     {% else %}
     <li class="next disabled"><a href="#">Newer &rarr;</a></li>
     {% endif %}
