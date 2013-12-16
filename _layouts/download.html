@@ -22,12 +22,17 @@ group: changelog
                 </a>
             </h2>
         </div>
-        <div id="collapseOne" class="panel-collapse collapse">
-            <ul>
-                {% assign pages_list = site.pages %}
-                {% assign group = 'changelog' %}
-                {% include page_list.html %}
-            </ul>
+        <div class="panel-body">
+            <div id="collapseOne" class="panel-collapse collapse">
+                <ul>
+                    {% assign pages_list = site.pages %}
+                    {% assign group = 'changelog' %}
+                    {% include page_list.html %}
+                </ul>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <p>Older versions are available for download but are not supported.</p>
         </div>
     </div>
 </div>
