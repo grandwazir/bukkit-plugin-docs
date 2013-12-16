@@ -1,0 +1,11 @@
+{% sorted_for node in pages_list sort_by:title %}
+    {% if node.title != null %}
+        {% if group == node.group %}
+            {% if page.url == node.url %}
+            <li class="active list-group-item"><a href="{{ site.base_path }}{{node.url}}" class="active">{{node.title}}</a></li>
+            {% else %}
+            <li class="list-group-item"><a href="{{ site.base_path }}{{node.url}}">{{node.title}}</a></li>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endsorted_for %}

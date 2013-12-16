@@ -13,17 +13,14 @@ group: changelog
     <li><a href="https://github.com/grandwazir/{{ site.plugin.name }}/tree/v{{ page.latest.title }}"><button class="btn btn-large btn" type="button">Source</button></a></li>
 </ul>
 
-<h2>Getting other versions</h2>
-
-<p><strong>Older versions are available to download but are no longer supported.</strong></p>
-
-{% assign pages_list = site.pages %}
-{% assign group = 'changelog' %}
-<p>
-<ul>
-    {% include page_list.html %}
+<div class="panel panel-default">
+<div class="panel-heading"><h2>Getting other versions</h2></div>
+<div class="panel-body"><p>Older versions are available for download but are <strong>no longer supported.</strong> Unless you have a very good technical reason you should always use the latest version.</p>
+<ul class="list-group">
+    {% assign pages_list = site.pages %}
+    {% assign group = 'changelog' %}
+    {% include panel_page_list.html %}
 </ul>
-</p>
 
 <h2>Building from source</h2>
 
