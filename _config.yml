@@ -3,8 +3,8 @@ markdown: redcarpet
 pygments: true
 base_path:
 plugin:
-  name: plugin_name
-  package_name: package_name
-  bukkit_dev: plugin_name
+  name: StarterKit
+  package_name: starter-kit
+  bukkit_dev: starterkit
 author:
   name: James Richardson

@@ -3,4 +3,4 @@ title: PLUGIN_NAME
 layout: front
 ---
 
-PLUGIN_SHORT_DESCRIPTION.
+A easy and fun way give players items.
