@@ -4,7 +4,7 @@ title: "Features"
 description: "A feature list for BanHammer"
 ---
 
-<p class="lead>BanHammer allows administrators and other trusted users to ban and kick players. It is a lightweight solution for all servers. The plugin stores all bans in a database of your choice.</p>
+<p class="lead">BanHammer allows administrators and other trusted users to ban and kick players. It is a lightweight solution for all servers. The plugin stores all bans in a database of your choice.</p>
 
 ## Banning
 
@@ -22,15 +22,12 @@ You can also setup a list of players who cannot be banned by the plugin. These p
 
 ### Notifications
 
-When a player who is banned attempts to join the server they will recieve a different notification depending on what type of ban they received. The notification is the message displayed to the player when they attempt to login to the server.
+When a player who is banned attempts to join the server they will receive a different notification depending on what type of ban they received. The notification is the message displayed to the player when they attempt to login to the server.
 
-#### Temporary bans
-
-<p><img src="http://archive.armathia.net/assets/banhammer/temp-ban-example.png" class="img-rounded img-responsive" /></p>
-
-#### Permanent bans
-
-<p><img src="http://archive.armathia.net/assets/banhammer/permenant-ban-example.png" class="img-rounded img-responsive" /></p>
+<div class="row">
+  <div class="col-md-6"><img src="http://archive.armathia.net/assets/banhammer/temp-ban-example.png" class="img-rounded img-responsive" /></div>
+  <div class="col-md-6"><img src="http://archive.armathia.net/assets/banhammer/permenant-ban-example.png" class="img-rounded img-responsive" /></div>
+</div>
 
 ## Recording
 
