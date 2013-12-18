@@ -1,5 +1,5 @@
 ---
-title: PLUGIN_NAME
+title: BanHammer
 layout: front
 ---
 

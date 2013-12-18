@@ -5,9 +5,7 @@ description: "How to setup your database for BanHammer"
 group: documentation
 ---
 
-{% contentfor intro %}
 <p class="lead">BanHammer uses the Bukkit persistance system. This means that you need to configure your bukkit.yml in your server directory with your database settings.</p>
-{% endcontentfor %}
 
 ## MySQL
 

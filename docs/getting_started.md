@@ -5,9 +5,7 @@ description: "A quick guide to getting started with BanHammer"
 group: documentation
 ---
 
-{% contentfor intro %}
 <p class="lead">Getting started with BanHammer couldn't be easier. Just download and drag it into your plugins folder and away you go. Still stuck? Read on.</p>
-{% endcontentfor %}
 
 ## Kicking
 
@@ -21,7 +19,7 @@ All bans are recorded in the BanHammer database until you pardon a player or pur
 
 ### Permanently
 
-You can ban players in a variety of interesting ways. Permenant bans are easist to do. In this example I am going to ban tom by typing `/ban tom Being silly`. Anything after their name is included in the ban reason.
+You can ban players in a variety of interesting ways. Permanent bans are easiest to do. In this example I am going to ban tom by typing `/ban tom Being silly`. Anything after their name is included in the ban reason.
 
 ### Temporarily
 
@@ -125,4 +123,4 @@ On occasion some bans may not be imported. The only foreseeable reason for this 
 
 BanHammer can export the names of all the players who have bans to the basic ban list. You can do this by using the following command: `/bh export`.
 
-*All active bans will be converted into permenant bans when exported.*
+*All active bans will be converted into permanent bans when exported.*

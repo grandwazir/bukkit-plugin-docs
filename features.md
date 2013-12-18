@@ -4,9 +4,7 @@ title: "Features"
 description: "A feature list for BanHammer"
 ---
 
-{% contentfor intro %}
-BanHammer allows administrators and other trusted users to ban and kick players. It is a lightweight solution for all servers. The plugin stores all bans in a database of your choice.
-{% endcontentfor %}
+<p class="lead>BanHammer allows administrators and other trusted users to ban and kick players. It is a lightweight solution for all servers. The plugin stores all bans in a database of your choice.</p>
 
 ## Banning
 
