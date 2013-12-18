@@ -1,10 +1,10 @@
 safe: false
 markdown: redcarpet
 pygments: true
-base_path:
+base_path: "http://grandwazir.github.io/BanHammer"
 plugin:
-  name: plugin_name
-  package_name: package_name
-  bukkit_dev: plugin_name
+  name: BanHammer
+  package_name: ban-hammer
+  bukkit_dev: banhammer
 author:
   name: James Richardson
