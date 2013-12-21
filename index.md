@@ -3,4 +3,4 @@ title: BanHammer
 layout: front
 ---
 
-PLUGIN_SHORT_DESCRIPTION.
+Bans, kicks and records.
