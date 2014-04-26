@@ -25,7 +25,7 @@ You can ban players in a variety of interesting ways. Permanent bans are easiest
 
 You can also ban players for a specific period of time. This is quite useful if it is someone's first offence or if you use short temporary bans as a warning system.
 
-In this example I am going to ban alice for 1 day, 16 hours and 30 minutes: `/ban alice t:1d16h30m Being silly`.
+In this example I am going to ban alice for 1 day, 16 hours and 30 minutes: `/ban -t:1d16h30m alice Being silly`.
 
 Valid time units are: seconds (s), minutes (m), hours (h), days (d) and weeks (w).
 
@@ -41,10 +41,6 @@ You can now set configurable ban limits to prevent moderators from issuing exces
 If I wanted my moderators to only be able to ban for up to 3 days I would give them the following permission node:
 
     banhammer.ban.medium
-
-You can also use these as a short cut for specifying time when you ban a player. This becomes really useful when you define your limits as sanctions for specific offences and helps to ensure that your players are consistent with the bans they hand out.
-
-In this example I am going to ban a player for 3 days by using the limit name: `/ban Yul t:medium`.
 
 ## Unbanning
 
